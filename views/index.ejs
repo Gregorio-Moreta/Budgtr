@@ -13,6 +13,23 @@
         <h1>
             Budgtr ALL
         </h1>
+        <table>
+        <% for(let i = 0; i < Budget.length; i++){ %>
+            <tr>
+                <td>
+                    <%= Budget[i].date %>
+                </td>
+                <td>
+                    <a href=""" target="_blank">
+                    <%= Budget[i].name %>
+                    </a>
+                </td>
+                <td>
+                    <%= Budget[i].amount %>
+                </td>
+            </tr>
+        <% } %>
+        </table>
     </div>
 </body>
 </html>

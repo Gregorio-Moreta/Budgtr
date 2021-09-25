@@ -18,7 +18,7 @@ app.use(express.static("public"))
 
 //  Index Route 
 app.get('/budget', (req, res) => {
-    res.render('index.ejs', budget)
+    res.render('index.ejs', {Budget: budget})
 })
 
 
