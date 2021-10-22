@@ -13,6 +13,11 @@
         <h1>
             Budgtr ALL
         </h1>
+        <nav>
+            <form method='get' action='/budget/new'>
+                <button type='submit'>New Item </button>
+            </form>
+        </nav>
         <table>
         <% for(let i = 0; i < Budget.length; i++){ %>
             <tr>
@@ -31,5 +36,6 @@
         <% } %>
         </table>
     </div>
+    
 </body>
 </html>
