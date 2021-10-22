@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Show Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <%= Budget.name %>
+        </h1>
+        <form method='get' action='/budget'>
+            <button type='submit'>Back </button>
+        </form>
+        <table>
+            <tr>
+                <td>
+                   <b>
+                       Date:
+                   </b> 
+                </td>
+                <td>
+                    <%= Budget.date%>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b>
+                       Name:
+                   </b> 
+                </td>
+                <td>
+                    <%= Budget.name%>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b>
+                       From:
+                   </b> 
+                </td>
+                <td>
+                    <%= Budget.from%>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b>
+                       Amount:
+                   </b> 
+                </td>
+                <td>
+                    <%= Budget.amount%>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <b>
+                       Tags:
+                   </b> 
+                </td>
+                <td>
+                    <%= Budget.tags%>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

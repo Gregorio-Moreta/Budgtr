@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <title>Document</title>
+    <title>Home Page</title>
 </head>
 <body>
     <div class="container">
@@ -20,7 +20,7 @@
                     <%= Budget[i].date %>
                 </td>
                 <td>
-                    <a href=""" target="_blank">
+                    <a href="/budget/<%= i %>" target="_self">
                     <%= Budget[i].name %>
                     </a>
                 </td>
